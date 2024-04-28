@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn("flex items-center justify-center", inter.className)}>
+      <body className={inter.className}>
         <ConvexClientProvider>{children}</ConvexClientProvider>
       </body>
     </html>
