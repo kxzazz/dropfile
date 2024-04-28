@@ -26,7 +26,7 @@ export default function Home() {
             createFileMutation({ name: "---" });
           }}
         >
-          Don't push me away NOOOOOOOOOOO 😭😭
+          😭😭
         </Button>
       </SignedIn>
       <SignedOut>

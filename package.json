@@ -6,8 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "pretty": "pnpx prettier --write ."
+    "type-check": "tsc --noEmit",
+    "lint": "eslint . --ext .ts,.tsx",
+    "lint:fix": "pnpm lint --fix",
+    "format": "pnpx prettier '**/*.{cjs,mjs,ts,tsx,json}' --ignore-unknown ./.gitignore --write",
+    "format:check": "prettier '**/*.{cjs,mjs,ts,tsx,json}' --ignore-path ./.gitignore --ignore-unknown --check"
   },
   "dependencies": {
     "@clerk/nextjs": "^5.0.3",
