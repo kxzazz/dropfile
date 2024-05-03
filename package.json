@@ -9,10 +9,11 @@
     "type-check": "tsc --noEmit",
     "lint": "eslint . --ext .ts,.tsx",
     "lint:fix": "pnpm lint --fix",
-    "format": "pnpx prettier '**/*.{cjs,mjs,ts,tsx,json}' --ignore-unknown ./.gitignore --write",
-    "format:check": "prettier '**/*.{cjs,mjs,ts,tsx,json}' --ignore-path ./.gitignore --ignore-unknown --check"
+    "format:check": "prettier '**/*.{cjs,mjs,ts,tsx,json}' --ignore-path ./.gitignore --ignore-unknown --check",
+    "format": "pnpx prettier '**/*.{cjs,mjs,ts,tsx,json}' --ignore-unknown ./.gitignore --write"
   },
   "dependencies": {
+    "@clerk/clerk-sdk-node": "^5.0.3",
     "@clerk/nextjs": "^5.0.3",
     "@radix-ui/react-slot": "^1.0.2",
     "class-variance-authority": "^0.7.0",
@@ -22,6 +23,7 @@
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
+    "svix": "^1.23.0",
     "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7"
   },
